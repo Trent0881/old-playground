@@ -1,0 +1,18 @@
+msgbox, lol
+
+n := 1
+
+loop, read, out2.txt
+{
+
+
+if(Mod(%n%,20) = 0)
+{
+x := A_LoopReadLine * 5000
+SoundBeep,  %x%, 200
+sleep 1
+#persistent
+Tooltip, %x%
+}
+n := n+1
+}

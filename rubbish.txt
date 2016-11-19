@@ -1,0 +1,28 @@
+
+     if A_Index = 1
+x = %A_LoopField%
+else if A_Index = 2
+1y = %A_LoopField%
+else if A_Index = 3
+2x = %A_LoopField%
+else if A_Index = 4
+2y = %A_LoopField%
+else if A_Index = 5
+3x = %A_LoopField%
+else if A_Index = 6
+3y = %A_LoopField%
+else if A_Index = 7
+4x = %A_LoopField%
+else if A_Index = 8
+4y = %A_LoopField%
+pos2x := boxstartx + boxwidth/2 + 2x
+pos2y := boxstarty + boxheight/2 - 2y
+pos3x := boxstartx + boxwidth/2 + 3x
+pos3y := boxstarty + boxheight/2 - 3y
+pos4x := boxstartx + boxwidth/2 + 4x
+pos4y := boxstarty + boxheight/2 - 4y
+
+ControlMove, Static1, %pos1x%, %pos1y%,,,
+ControlMove, Static2, %pos2x%, %pos2y%,,,
+ControlMove, Static3, %pos3x%, %pos3y%,,,
+ControlMove, Static4, %pos4x%, %pos4y%,,,

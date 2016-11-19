@@ -1,0 +1,9 @@
+#SingleInstance Force
+
+SoundPlay *-1
+SoundBeep, 750, 500
+
+loop, Read, out2.txt
+{
+SoundBeep, A_LoopReadLine, 1
+}
